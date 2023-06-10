@@ -5,6 +5,7 @@
   --bg-color--: #000814;
   --text-color: #edf2fb;
   --secondary-color: #9db4c0c6;
+  --tertiary-color: #a8b2d1;
 }
 
 * {
@@ -29,7 +30,7 @@
 
 .container {
   display: flex;
-  margin: 0px 10%;
+  margin: 0px 7%;
 }
 
 .side {
@@ -76,17 +77,16 @@
 }
 
 .lines.active {
-  height: 2px;
   width: 5rem;
   background-color: var(--text-color);
-  transition: all 0.2s ease 0s;
+  transition: all 0.2s ease;
 }
 
 .lines {
   width: 30px;
   height: 1.5px;
   background-color: var(--secondary-color);
-  transition: all 0.2s ease 0s;
+  transition: 0.2s ease;
 }
 
 .menu-text.active {
@@ -100,7 +100,7 @@
 .menu:hover .lines {
   background-color: var(--text-color);
   width: 5rem;
-  height: 2px;
+  transition: all 0.2s ease;
 }
 
 .menu-text {
@@ -165,74 +165,56 @@ h2 {
 
 p {
   font-size: 1rem;
-  width: 85%;
   font-weight: 400;
-  color: var(--secondary-color);
+  width: 90%;
+  color: var(--tertiary-color);
 }
 
 span {
   color: var(--text-color);
 }
 
-.experience {
+.experience,
+.projects {
   padding-top: 8rem;
+  margin: 0px;
 }
 
-.experience .content .box {
-  box-sizing: border-box;
-  margin-top: 40px;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-column-gap: 10px;
+.experience table,
+.projects table {
+  padding-bottom: 2rem;
 }
 
-.experience .content .box .date {
-  display: flex;
-  align-items: baseline;
-  margin-bottom: 5px;
+.experience #pad,
+.projects #pad {
+  text-align: left;
+  padding-right: 20px;
+  width: 100px;
 }
 
-.date h4 {
+.experience .col1,
+.projects .col1 {
   letter-spacing: 2px;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   color: var(--secondary-color);
   font-weight: 500;
 }
 
-.experience .content .box .date .column {
-  margin-left: 5rem;
-}
-
-.experience .content .box .date h3 {
-  margin-bottom: 10px;
+.experience .col2,
+.projects .col2 {
+  color: var(--text-color);
+  font-size: 1.1rem;
   font-weight: 400;
+  padding-left: 10px;
+  text-align: left;
 }
 
-.projects {
-  padding-top: 8rem;
-}
-
-.projects .content .box {
-  box-sizing: border-box;
-  margin-top: 40px;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-column-gap: 10px;
-}
-
-.projects .content .box .image {
-  display: flex;
-  align-items: baseline;
-  margin-bottom: 5px;
-}
-
-.projects .content .box .image .column {
-  margin-left: 5rem;
-}
-
-.projects .content .box .image h3 {
-  margin-bottom: 10px;
-  font-weight: 400;
+.experience p,
+.projects p {
+  font-weight: 300;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  padding-left: 10px;
 }
 
 .footer {
@@ -294,9 +276,19 @@ span {
   .experience .content {
     padding: 0px 3rem;
   }
+  .experience p,
+  .experience .col2 {
+    padding-left: 50px;
+  }
   .projects .content {
     padding: 0px 3rem;
   }
+
+  .projects p,
+  .projects .col2 {
+    padding-left: 50px;
+  }
+
   .footer {
     padding: 0px 3rem;
   }
