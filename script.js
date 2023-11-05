@@ -1,22 +1,25 @@
 const li = document.querySelectorAll(".lines");
-const sec = document.querySelectorAll("section");
-
-function activeMenu() {
-  let len = sec.length;
-  while (--len && window.scrollY + 97 < sec[len].offsetTop) {}
-  li.forEach((ltx) => ltx.classList.remove("active"));
-  li[len].classList.add("active");
-}
-activeMenu();
-window.addEventListener("scroll", activeMenu);
-
 const mt = document.querySelectorAll(".menu-text");
+let sec = document.querySelectorAll("section");
 
-function activeMenuText() {
-  let len = sec.length;
-  while (--len && window.scrollY + 97 < sec[len].offsetTop) {}
-  mt.forEach((ltx) => ltx.classList.remove("active"));
-  mt[len].classList.add("active");
+function setActiveMenu() {
+  const scrollY = window.scrollY;
+
+  sec = document.querySelectorAll("section");
+
+  sec.forEach((section, index) => {
+    const sectionTop = section.offsetTop;
+    const sectionBottom = sectionTop + section.clientHeight;
+
+    if (scrollY >= sectionTop && scrollY < sectionBottom) {
+      li.forEach((ltx) => ltx.classList.remove("active"));
+      li[index].classList.add("active");
+
+      mt.forEach((ltx) => ltx.classList.remove("active"));
+      mt[index].classList.add("active");
+    }
+  });
 }
-activeMenuText();
-window.addEventListener("scroll", activeMenuText);
+
+setActiveMenu();
+window.addEventListener("scroll", setActiveMenu);
