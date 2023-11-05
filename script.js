@@ -5,7 +5,7 @@ let sec = document.querySelectorAll("section");
 function setActiveMenu() {
   const scrollY = window.scrollY;
 
-  sec = document.querySelectorAll("section");
+  sec = document.querySelectorAll("section"); // Add this line to update the sections
 
   sec.forEach((section, index) => {
     const sectionTop = section.offsetTop;
