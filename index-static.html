@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shauryaveer Narwal - Computer Science Student</title>
+    <meta
+      name="description"
+      content="Senior Computer Science Student at University of Michigan passionate about creating innovative solutions and building impactful applications."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://shauryaveer.dev" />
+    <meta
+      property="og:title"
+      content="Shauryaveer Narwal - Computer Science Student"
+    />
+    <meta
+      property="og:description"
+      content="Senior Computer Science Student at University of Michigan passionate about creating innovative solutions and building impactful applications."
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://shauryaveer.dev" />
+    <meta
+      property="twitter:title"
+      content="Shauryaveer Narwal - Computer Science Student"
+    />
+    <meta
+      property="twitter:description"
+      content="Senior Computer Science Student at University of Michigan passionate about creating innovative solutions and building impactful applications."
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body class="theme-dark">
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="#home">SN</a>
+        </div>
+        <div class="nav-menu" id="nav-menu">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#about" class="nav-link">About</a>
+          <button
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Toggle theme"
+          >
+            <i class="fas fa-moon"></i>
+          </button>
+        </div>
+        <div class="nav-toggle" id="nav-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <div class="hero-container">
+          <div class="hero-content">
+            <div class="hero-text">
+              <h1 class="hero-title">
+                Hi, I'm <span class="highlight">Shauryaveer Narwal</span>
+              </h1>
+              <p class="hero-subtitle">
+                Senior CS Student @ UofM
+                <img
+                  src="assets/images/umich.png"
+                  alt="University of Michigan"
+                  class="umich-logo"
+                />
+              </p>
+              <p class="hero-description">
+                I build innovative digital solutions that make a difference.
+                Passionate about clean code, user experience, and cutting-edge
+                technology.
+              </p>
+              <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+              </div>
+            </div>
+            <div class="hero-visual">
+              <div class="hero-image">
+                <img
+                  src="assets/images/Headshot.png"
+                  alt="Shauryaveer Narwal"
+                  class="profile-image"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="scroll-indicator">
+            <a href="#projects">
+              <i class="fas fa-chevron-down"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="projects">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">
+              A showcase of my recent work and technical expertise
+            </p>
+          </div>
+
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="assets/images/shopgpt.png"
+                  alt="ShopGPT"
+                  class="project-img"
+                />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/shaurya10n/shopping-assistant"
+                      target="_blank"
+                      class="project-link"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">ShopGPT</h3>
+                <p class="project-description">
+                  AI-enhanced web application leveraging React for a dynamic
+                  front-end and Django as a robust backend framework,
+                  facilitating personalized online shopping experiences.
+                  Integrated OpenAI API for custom deal recommendations,
+                  utilizing a Python-based collaborative filtering algorithm for
+                  real-time, personalized deal aggregation from various online
+                  sources.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Django</span>
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">MongoDB</span>
+                  <span class="tech-tag">OpenAI</span>
+                  <span class="tech-tag">Google Firebase</span>
+                </div>
+                <div class="project-date">Oct 2023 – May 2024</div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="assets/images/discord.png"
+                  alt="Tennis Meetup Bot"
+                  class="project-img"
+                />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/shaurya10n/tennis-meetup-bot"
+                      target="_blank"
+                      class="project-link"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Tennis Meetup Bot</h3>
+                <p class="project-description">
+                  Discord bot to automate tennis match scheduling, player
+                  matching, and court management for 100+ users. Created a
+                  Python-based player matching algorithm using skill, location,
+                  and availability. Streamlined deployment with Docker and
+                  docker-compose, cutting setup time by 50%.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Discord.py</span>
+                  <span class="tech-tag">AWS</span>
+                  <span class="tech-tag">DynamoDB</span>
+                  <span class="tech-tag">Docker</span>
+                  <span class="tech-tag">Pytest</span>
+                </div>
+                <div class="project-date">July 2025 – Present</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section id="experience" class="experience">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Experience</h2>
+            <p class="section-subtitle">
+              My professional journey and achievements
+            </p>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <div class="company-logo">
+                    <img
+                      src="assets/images/vvdn.jpg"
+                      alt="VVDN Technologies"
+                      class="company-logo-img"
+                    />
+                  </div>
+                  <div class="timeline-info">
+                    <h3>Software Engineer Intern</h3>
+                    <h4>VVDN Technologies</h4>
+                    <span class="timeline-date">June 2025 – Aug 2025</span>
+                  </div>
+                </div>
+                <ul class="timeline-bullets">
+                  <li>
+                    Constructed software components for IoT-based smart device
+                    solutions leveraging Python and C++, integrating MQTT
+                    protocols for real-time data communication
+                  </li>
+                  <li>
+                    Collaborated with 5-engineer team to build scalable cloud
+                    infrastructure on Google Cloud Platform, cutting client
+                    onboarding time by 30% and supporting 100+ IoT devices with
+                    real-time messaging
+                  </li>
+                  <li>
+                    Engaged in agile development practices, contributing to
+                    sprint planning, daily stand-ups, and retrospectives to
+                    ensure on-time project delivery
+                  </li>
+                  <li>
+                    Gained hands-on experience with Git for version control, AWS
+                    for cloud deployment, and 5G network simulation tools
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <div class="company-logo">
+                    <img
+                      src="assets/images/msu.png"
+                      alt="Michigan State University College of Engineering"
+                      class="company-logo-img"
+                    />
+                  </div>
+                  <div class="timeline-info">
+                    <h3>Research Intern</h3>
+                    <h4>College of Engineering — Michigan State University</h4>
+                    <span class="timeline-date">May 2024 – Aug 2024</span>
+                  </div>
+                </div>
+                <ul class="timeline-bullets">
+                  <li>
+                    Implemented an automated pipeline in Python (pandas,
+                    scikit-learn) for the Nano Biosensors Lab, reducing
+                    spectroscopic data processing time from Excel files by 95%
+                  </li>
+                  <li>
+                    Applied K-means clustering, statistical analysis, and
+                    interactive data visualization through SciPy, NumPy, and
+                    openpyxl to enhance lab's experimental data interpretation
+                    efficiency
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <div class="company-logo">
+                    <img
+                      src="assets/images/geniemode.png"
+                      alt="Geniemode"
+                      class="company-logo-img"
+                    />
+                  </div>
+                  <div class="timeline-info">
+                    <h3>Software Development Intern</h3>
+                    <h4>Geniemode (Tech Startup)</h4>
+                    <span class="timeline-date">May 2023 – Aug 2023</span>
+                  </div>
+                </div>
+                <ul class="timeline-bullets">
+                  <li>
+                    Collaborated with a 6-person development team to enhance a
+                    global supply chain platform serving 10+ enterprise clients,
+                    including Zara and H&M
+                  </li>
+                  <li>
+                    Leveraged Node.js to optimize backend operations, reducing
+                    API response times by 40% and utilized AWS to improve
+                    scalability and system reliability
+                  </li>
+                  <li>
+                    Improved platform user experience through React Native
+                    features, reducing order placement time by 30% and enabling
+                    real-time tracking for 500+ daily orders
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about">
+        <div class="container">
+          <div class="about-content">
+            <div class="about-text">
+              <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">
+                  Passionate about technology and innovation
+                </p>
+              </div>
+              <p class="about-description">
+                I'm a senior computer science student at the University of
+                Michigan (Go Blue!) with a passion for creating elegant
+                solutions to complex problems. I'm currently developing my
+                skills in full-stack development and building scalable
+                applications that deliver exceptional user experiences.
+              </p>
+              <p class="about-description">
+                I enjoy exploring new technologies, contributing to open-source
+                projects, and sharing knowledge with the developer community.
+              </p>
+
+              <div class="interests-section">
+                <h3>Beyond Coding</h3>
+                <p class="interests-subtitle">
+                  When I'm not writing amazing and totally bug free code, I’m
+                  usually exploring my creative and personal interests.
+                </p>
+                <div class="interests-gallery">
+                  <div class="interest-item">
+                    <div class="interest-image">
+                      <img
+                        src="assets/images/gym.jpeg"
+                        alt="Gym"
+                        class="interest-img"
+                      />
+                    </div>
+                    <div class="interest-overlay">
+                      <h4>Gym</h4>
+                      <p>I enjoy powerlifting and bodybuilding</p>
+                    </div>
+                  </div>
+
+                  <div class="interest-item">
+                    <div class="interest-image">
+                      <img
+                        src="assets/images/hike.jpeg"
+                        alt="Hiking"
+                        class="interest-img"
+                      />
+                    </div>
+                    <div class="interest-overlay">
+                      <h4>Hiking</h4>
+                      <p>I love nature and exploring new places</p>
+                    </div>
+                  </div>
+
+                  <div class="interest-item">
+                    <div class="interest-image">
+                      <img
+                        src="assets/images/snowboard.jpeg"
+                        alt="Snowboarding"
+                        class="interest-img"
+                      />
+                    </div>
+                    <div class="interest-overlay">
+                      <h4>Snowboarding</h4>
+                      <p>I am trying to get better at this</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <h3 class="footer-name">Shauryaveer Narwal</h3>
+          <div class="social-links">
+            <a
+              href="https://github.com/shaurya10n"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://linkedin.com/in/shauryaveer-narwal"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/shaurya.narwal/"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="mailto:shauryan@umich.edu">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
