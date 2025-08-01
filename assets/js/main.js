@@ -3,27 +3,34 @@ class ThemeManager {
   constructor() {
     this.themeToggle = document.getElementById("theme-toggle");
     this.body = document.body;
-    this.currentTheme = localStorage.getItem("theme") || "light";
+    this.currentTheme = localStorage.getItem("theme") || "dark";
 
     this.init();
   }
 
   init() {
+    if (!this.themeToggle) {
+      console.error("Theme toggle button not found");
+      return;
+    }
     this.setTheme(this.currentTheme);
     this.themeToggle.addEventListener("click", () => this.toggleTheme());
   }
 
   setTheme(theme) {
+    console.log("Setting theme to:", theme);
     this.body.setAttribute("data-theme", theme);
     this.currentTheme = theme;
     localStorage.setItem("theme", theme);
 
     // Update toggle button icon
     const icon = this.themeToggle.querySelector("i");
-    if (theme === "dark") {
-      icon.className = "fas fa-sun";
-    } else {
-      icon.className = "fas fa-moon";
+    if (icon) {
+      if (theme === "dark") {
+        icon.className = "fas fa-sun";
+      } else {
+        icon.className = "fas fa-moon";
+      }
     }
   }
 
