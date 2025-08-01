@@ -9,10 +9,7 @@ class ThemeManager {
   }
 
   init() {
-    // Apply theme immediately to prevent flash
     this.setTheme(this.currentTheme);
-
-    // Add event listener for theme toggle
     this.themeToggle.addEventListener("click", () => this.toggleTheme());
   }
 

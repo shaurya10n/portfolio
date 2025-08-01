@@ -48,31 +48,6 @@
   box-sizing: border-box;
 }
 
-/* Prevent flash of unstyled content */
-body {
-  visibility: hidden;
-}
-
-body.theme-dark,
-body.theme-light {
-  visibility: visible;
-}
-
-/* Ensure dark theme is applied by default before JS loads */
-body.theme-dark {
-  --primary-color: #3b82f6;
-  --primary-hover: #2563eb;
-  --secondary-color: #94a3b8;
-  --accent-color: #fbbf24;
-  --text-primary: #f1f5f9;
-  --text-secondary: #cbd5e1;
-  --text-muted: #64748b;
-  --bg-primary: #0f172a;
-  --bg-secondary: #1e293b;
-  --bg-tertiary: #334155;
-  --border-color: #334155;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -305,7 +280,15 @@ p {
 }
 
 .highlight::after {
-  display: none;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: var(--accent-color);
+  opacity: 0.3;
+  z-index: -1;
 }
 
 .hero-subtitle {
