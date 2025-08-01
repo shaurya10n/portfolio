@@ -1048,6 +1048,10 @@ p {
     transform: translateY(-8px) rotate(-45deg);
   }
 
+  .hero {
+    padding-top: 90px;
+  }
+
   .hero-content {
     grid-template-columns: 1fr;
     text-align: center;
@@ -1113,6 +1117,10 @@ p {
 }
 
 @media (max-width: 480px) {
+  .hero {
+    padding-top: 80px;
+  }
+
   .hero-title {
     font-size: 2rem;
   }
