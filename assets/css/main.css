@@ -48,6 +48,16 @@
   box-sizing: border-box;
 }
 
+/* Prevent flash of unstyled content */
+body {
+  visibility: hidden;
+}
+
+body.theme-dark,
+body.theme-light {
+  visibility: visible;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -289,6 +299,7 @@ p {
   background-color: var(--accent-color);
   opacity: 0.3;
   z-index: -1;
+  transition: background-color 0.3s ease;
 }
 
 .hero-subtitle {
