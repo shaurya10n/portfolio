@@ -58,6 +58,21 @@ body.theme-light {
   visibility: visible;
 }
 
+/* Ensure dark theme is applied by default before JS loads */
+body.theme-dark {
+  --primary-color: #3b82f6;
+  --primary-hover: #2563eb;
+  --secondary-color: #94a3b8;
+  --accent-color: #fbbf24;
+  --text-primary: #f1f5f9;
+  --text-secondary: #cbd5e1;
+  --text-muted: #64748b;
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --bg-tertiary: #334155;
+  --border-color: #334155;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -300,6 +315,13 @@ p {
   opacity: 0.3;
   z-index: -1;
   transition: background-color 0.3s ease;
+  /* Prevent flash on mobile */
+  animation: none;
+}
+
+/* Hide highlight until theme is loaded */
+body:not([data-theme]) .highlight::after {
+  opacity: 0;
 }
 
 .hero-subtitle {
@@ -1173,6 +1195,16 @@ p {
   .btn {
     width: 100%;
     max-width: 250px;
+  }
+
+  /* Additional mobile-specific fix for highlight flash */
+  .highlight::after {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  body[data-theme] .highlight::after {
+    opacity: 0.3;
   }
 }
 
