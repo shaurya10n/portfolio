@@ -567,10 +567,19 @@ p {
   background-color: var(--bg-primary);
 }
 
+@media (min-width: 1024px) {
+  .experience {
+    padding: 4rem 0;
+  }
+}
+
 .timeline {
   position: relative;
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
 }
 
 .timeline::before {
@@ -582,11 +591,11 @@ p {
   width: 2px;
   background-color: var(--border-color);
   transform: translateX(-50%);
+  z-index: 0;
 }
 
 .timeline-item {
   position: relative;
-  margin-bottom: 3rem;
   opacity: 0;
   transform: translateY(30px);
   animation: fadeInUp 0.6s ease forwards;
@@ -625,6 +634,7 @@ p {
   border-radius: 1rem;
   box-shadow: var(--shadow-md);
   transition: all 0.3s ease;
+  margin: 0 0.5rem;
 }
 
 .timeline-content:hover {
@@ -1014,6 +1024,72 @@ p {
 }
 
 /* Responsive Design */
+/* Medium screens - Single column but more compact */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .timeline {
+    max-width: 900px;
+  }
+
+  .timeline-item {
+    margin-bottom: 2rem;
+  }
+
+  .timeline-content {
+    padding: 1.5rem;
+  }
+}
+
+/* Large screens - Grid layout for experience */
+@media (min-width: 1024px) {
+  .timeline {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    max-width: 1400px;
+  }
+
+  .timeline::before {
+    display: none;
+  }
+
+  .timeline-item {
+    margin-bottom: 0;
+  }
+
+  .timeline-item:nth-child(odd) .timeline-content,
+  .timeline-item:nth-child(even) .timeline-content {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 1.5rem;
+    text-align: left;
+  }
+
+  .timeline-marker {
+    display: none;
+  }
+
+  .timeline-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .timeline-bullets {
+    flex-grow: 1;
+  }
+
+  .timeline-header {
+    margin-bottom: 0.75rem;
+  }
+
+  .timeline-info h3 {
+    font-size: 1.2rem;
+  }
+
+  .timeline-info h4 {
+    font-size: 1rem;
+  }
+}
+
 @media (max-width: 768px) {
   .nav-menu {
     position: fixed;
@@ -1093,9 +1169,9 @@ p {
   .timeline-item:nth-child(odd) .timeline-content,
   .timeline-item:nth-child(even) .timeline-content {
     margin-left: 50px;
-    margin-right: 0;
+    margin-right: 1rem;
     padding-left: 1rem;
-    padding-right: 0;
+    padding-right: 1rem;
     text-align: left;
   }
 
@@ -1162,6 +1238,18 @@ p {
   .btn {
     width: 100%;
     max-width: 250px;
+  }
+
+  .timeline-item:nth-child(odd) .timeline-content,
+  .timeline-item:nth-child(even) .timeline-content {
+    margin-left: 40px;
+    margin-right: 0.5rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .timeline-content {
+    padding: 1.25rem;
   }
 }
 
