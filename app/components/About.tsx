@@ -37,7 +37,8 @@ export default function About() {
               About Me
             </h2>
             <p className="text-gray-400 text-lg">
-              <em>"one must find sisyphus happy"</em>
+              <em>"one must imagine sisyphus happy"</em>
+            </p>
           </div>
 
           <div className="space-y-4 text-gray-300 leading-relaxed text-lg">
