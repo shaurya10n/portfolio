@@ -58,7 +58,7 @@ export default function About() {
 <p>
   Outside of tech, I love lifting weights, hiking, and slowly getting better at 
   snowboarding. One of my goals for 2026 is to read more, and right now I’m working 
-  through <em>Dune</em> by Frank Herbert after loving the movies.
+  through <em>Dune</em> by Frank Herbert after loving the movies (Lisan al-Gaib!).
 </p>
 
           </div>
