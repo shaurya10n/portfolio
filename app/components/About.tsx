@@ -37,8 +37,7 @@ export default function About() {
               About Me
             </h2>
             <p className="text-gray-400 text-lg">
-              Passionate about technology and innovation.
-            </p>
+              <em>"one must find sisyphus happy"</em>
           </div>
 
           <div className="space-y-4 text-gray-300 leading-relaxed text-lg">
