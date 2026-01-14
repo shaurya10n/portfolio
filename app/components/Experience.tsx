@@ -11,16 +11,16 @@ const experiences = [
     logo: "/assets/images/vvdn.jpg",
     points: [
       <>
-        Built <span className="font-bold text-white">agentic workflow</span> platform to analyze 1000+ daily device logs, cutting anomaly detection time from hours to minutes
+        Built <span className="font-bold text-white">agentic workflow</span> platform to analyze router device logs, reducing anomaly detection time from hours to minutes as proof-of-concept for expansion to other IoT devices
       </>,
       <>
-        Developed <span className="font-bold text-white">RAG pipeline</span> with <span className="font-bold text-white">Vector DB </span>for rapid querying across 50+ manuals and 10k+ telemetry records
+        Developed <span className="font-bold text-white">RAG pipeline</span> with <span className="font-bold text-white">Vector DB</span> for rapid querying across router manuals and telemetry records
       </>,
       <>
-        Designed <span className="font-bold text-white">Python-based</span> backend APIs with <span className="font-bold text-white">Model Context Protocol</span> patterns, deployed on <span className="font-bold text-white">Google Cloud Platform</span> using <span className="font-bold text-white">Docker</span> with automated <span className="font-bold text-white">CI/CD pipelines</span>
+        Designed <span className="font-bold text-white">Python-based</span> backend APIs and event-driven architecture, deployed on <span className="font-bold text-white">Google Cloud Platform</span> using <span className="font-bold text-white">Docker</span> with automated <span className="font-bold text-white">CI/CD pipelines</span>
       </>,
       <>
-        Integrated <span className="font-bold text-white">Transformer</span> models with prompt engineering, achieving 85% log classification accuracy and reducing manual triage by 45%
+        Integrated <span className="font-bold text-white">Transformer models</span> with <span className="font-bold text-white">prompt engineering</span>, achieving 85% log classification accuracy and reducing manual triage by 45%
       </>,
     ],
   },
